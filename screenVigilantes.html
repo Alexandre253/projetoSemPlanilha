@@ -1,0 +1,85 @@
+<html>
+<head>
+<title></title>
+<style>
+	p{
+		font-weight:bold;
+		font-size:24px;
+	}
+	.carrosDentro{
+		float:right;
+		width:45%
+	}
+	.carrosAutotizados{
+		float:left;
+	}
+	table {
+		border-collapse: collapse;
+	}
+	table, th, td {
+		border: 1px solid black;
+	}
+	.footer {
+	   position: fixed;
+	   left: 0;
+	   bottom: 0;
+	   width: 100%;
+	   color: white;
+	   text-align: center;
+	   font-size:15px;
+	}
+	body{
+	background-image:url(fundo.jpg);
+	background-size: 100% 100%;
+	color:white;
+	}
+</style>
+</head>
+<body>
+	<h1>Vigilantes</h1>
+	<div class="carrosAutotizados">
+		<p>Veículos autorizados</p>
+			<table>
+				<tr>
+					<th>Transportadora</th>
+					<th>Placa</th>
+					<th>Entrada</th>
+				</tr>
+				<tr>
+					<td>Leofran</td>
+					<td>BUD-0133</td>
+					<td><button onclick="sureFunction()">Entrada</button></td>
+				</tr>
+			</table>
+	</div>
+		<div class="carrosDentro">
+		<p>Veículos dentro do condomínio</p>
+		<table>
+				<tr>
+					<th>Transportadora</th>
+					<th>Placa</th>
+					<th>Saída</th>
+				</tr>
+				<tr>
+					<td>Axon</td>
+					<td>AXN-1B35</td>
+					<td><button onclick="sureFunction()">Saída</button></td>
+				</tr>
+			</table>
+	</div>
+		<div class="footer">	
+	Copyright © Alexandre Santos
+	</div>
+		<script>
+		function sureFunction(){
+			var con = confirm("Tem certeza disso?");
+			if(con == true){
+			alert("OK");
+			}
+			else{
+			alert("CANCEL");
+			}
+		}
+		</script>
+</body>
+</html>

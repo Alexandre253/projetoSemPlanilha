@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title></title>
+	<style>
+	body{
+	background-image:url(fundo.jpg);
+	background-size: 100% 100%;
+	color:white;	
+	}
+	.btnEntrar{
+		background-color: white; 
+		color: black; 
+		border: 2px solid #4CAF50;
+		padding: 14px 46px;
+	}	
+	.btnEntrar:hover{
+		background-color: #4CAF50;
+		color: white;
+	}
+	.footer {
+	   position: fixed;
+	   left: 0;
+	   bottom: 0;
+	   width: 100%;
+	   color: white;
+	   text-align: center;
+	}
+	.cont{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+	}
+	</style>	
+</head>
+<body>
+	<h1>Porteiro</h1>
+	<div class="cont">
+		<form>
+			<center>CPF do Motorista(Sem pontos ou traços)<br><input type="text" maxlength="11"class="cpf" size="11"><br><br>
+			Nome do Motorista <br><input type="text" size="32"><br><br>
+			Transportadora <br><input type="text"><br><br>
+			Placa(Sem traços) <br><input type="text" size="8"><br><br>
+			Antt <br><input type="text" size="10"><br><br>
+			Cliente <br><input type="text"><br><br>
+			Coleta/Nota Fiscal <br><input type="text"><br><br>
+			<button class="btnEntrar" type="submit" onclick="sureFunction()">Enviar!</button>
+			</center> 
+		</form>
+	</div>
+	<div class="footer">	
+	Copyright © Alexandre Santos
+	</div>
+	<script>
+		function sureFunction(){
+			var con = confirm("Tem certeza disso?");
+			if(con == true){
+			alert("Dados enviados com sucesso!");
+			}
+			else{
+			alert("Operação cancelada com sucesso!");
+			}
+		}
+	</script>
+</body>
+</html>
